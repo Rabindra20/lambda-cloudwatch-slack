@@ -36,7 +36,7 @@ resource "aws_lambda_function" "test_lambda" {
 
   environment {
     variables = {
-      webhook_url in env = "http://XXXXXXXXXXXXXXX"
+      webhook_url = "http://XXXXXXXXXXXXXXX"
     }
   }
 }
